@@ -1,0 +1,656 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
+.page {
+  max-width: 1400px;
+  background: rgba(47, 126, 255, 0.27);
+  margin: 0 auto;
+}
+
+.header-main .header-center .header-inner .about-us, .header-main .header-center .header-inner .phone-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team-area .container-for-team-members .block .name, .blog-posts .accordion .text-middle {
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.team-area .container-for-team-members .block .about-member, .blog-posts .accordion .text-bottom {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.icon.small {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: #2f3b52;
+  width: 47px;
+  height: 47px;
+  border-radius: 23.5px;
+}
+.icon.small::before {
+  font-family: "FontAwesome";
+  font-size: 43px;
+  text-align: center;
+  color: #dcff88;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat";
+  min-width: 320px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+  font-family: "Montserrat";
+}
+
+.fa-chevron-down, .fa-chevron-up {
+  display: none;
+}
+
+.header-main .header-center {
+  max-width: 1024px;
+  margin: 0 auto;
+  background: rgba(186, 212, 255, 0.27);
+}
+.header-main .header-center .header-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+.header-main .header-center .header-inner .about-us {
+  flex-basis: 50%;
+  text-transform: uppercase;
+}
+.header-main .header-center .header-inner .about-us > div {
+  margin-left: 10px;
+  transition: 0.2s linear;
+}
+.header-main .header-center .header-inner .about-us > div:hover {
+  color: #717a8c;
+  cursor: pointer;
+}
+.header-main .header-center .header-inner .about-us .external-kt {
+  background: #2f3b52;
+  border-radius: 4px;
+}
+.header-main .header-center .header-inner .about-us .external-kt .kt {
+  padding: 20px;
+  color: #dcff88;
+}
+.header-main .header-center .header-inner .phone-main .icon-phone-main::before {
+  content: "";
+}
+.header-main .header-center .header-inner .phone-main .phone-main-number {
+  margin-left: 20px;
+}
+
+.big-picture-main {
+  overflow: hidden;
+}
+.big-picture-main .container-for-big-picture {
+  position: relative;
+}
+.big-picture-main .container-for-big-picture img {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  z-index: -1;
+  min-height: 300px;
+}
+.big-picture-main .container-common {
+  display: flex;
+}
+.big-picture-main .container-common .container-1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  left: -60px;
+}
+.big-picture-main .container-common .container-1 .color-option {
+  color: red;
+  background: #8835ec;
+  width: 170px;
+  position: absolute;
+  transform: rotate(-90deg);
+  text-align: center;
+  box-shadow: 0.9px 0.3px 1px #62e48a;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.big-picture-main .container-common .container-2 {
+  font-family: "OpenSans", Arial;
+  padding: 8% 0 13% 0;
+  text-align: center;
+  width: 100%;
+}
+.big-picture-main .container-common .container-2 h1 {
+  padding-bottom: 20px;
+  color: #ffffff;
+}
+.big-picture-main .container-common .container-2 .text {
+  padding-bottom: 70px;
+  color: #ffffff;
+  font-size: 18px;
+}
+.big-picture-main .container-common .container-2 .button {
+  border: none;
+  padding: 0 20px;
+  border-radius: 20px;
+  background: #dcff88;
+  color: #2f3b52;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 40px;
+  cursor: pointer;
+}
+
+.team-area {
+  margin: 0 auto;
+  max-width: 1024px;
+  text-align: center;
+  font-family: "OpenSans", Arial;
+  color: #121f37;
+  padding-bottom: 100px;
+}
+.team-area h1 {
+  font-size: 50px;
+  font-family: "Montserrat";
+  padding: 50px 0 20px 0;
+}
+.team-area .team-top-text {
+  text-align: center;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+.team-area .container-for-team-members {
+  display: flex;
+}
+.team-area .container-for-team-members .block {
+  flex-basis: 25%;
+  min-width: 30px;
+  padding: 0 10px;
+}
+.team-area .container-for-team-members .block img {
+  max-width: 100%;
+  height: auto;
+}
+.team-area .container-for-team-members .block .post {
+  font-size: 14px;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.container-for-team-members .container-for-photo {
+  margin-bottom: 20px;
+}
+
+.container-for-team-members .container-for-photo img,
+.blog-posts .container-img img {
+  filter: grayscale(0.2);
+  transition: 0.4s linear;
+}
+.container-for-team-members .container-for-photo img:hover,
+.blog-posts .container-img img:hover {
+  outline: 2px solid rgba(247, 243, 101, 0.72);
+  box-shadow: 3px 1px 4px 3px rgba(46, 208, 234, 0.49);
+  filter: grayscale(0) saturate(1.5);
+  transform: scale(1.1);
+}
+
+.timetable {
+  margin: 0 auto;
+  max-width: 1400px;
+  text-align: left;
+  font-family: "OpenSans", Arial;
+  color: #ffffff;
+  padding: 70px 50px;
+  background: #2f3b52;
+}
+.timetable .timetable-inner {
+  background: #2f3b52;
+  display: flex;
+  justify-content: center;
+}
+.timetable .timetable-inner > div {
+  flex-basis: 45%;
+}
+.timetable .timetable-inner .container-for-photo img {
+  width: 100%;
+  height: auto;
+  outline: 4px solid rgba(247, 243, 101, 0.72);
+  box-shadow: 0px 0px 4px 7px rgba(46, 208, 234, 0.49);
+}
+.timetable .timetable-inner .container-for-text h1 {
+  font-size: 50px;
+  font-family: "Montserrat";
+}
+.timetable .timetable-inner .container-for-text .date-and-place {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  margin-top: 20px;
+}
+.timetable .timetable-inner .container-for-text .text {
+  margin-top: 35px;
+  line-height: 22px;
+  font-size: 14px;
+}
+.timetable .timetable-inner .block-right {
+  margin-left: 40px;
+}
+
+.blog-posts {
+  text-align: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: "OpenSans", Arial;
+  padding-bottom: 80px;
+}
+.blog-posts h1 {
+  font-size: 50px;
+  font-family: "Montserrat";
+  padding: 60px 0 40px 0;
+}
+.blog-posts .accordion {
+  display: flex;
+}
+.blog-posts .accordion .container {
+  flex-basis: 25%;
+  min-width: 30px;
+  padding: 0 10px;
+}
+.blog-posts .accordion .container img {
+  max-width: 100%;
+  height: auto;
+}
+.blog-posts .accordion .container-img {
+  padding-bottom: 20px;
+}
+
+.clients {
+  text-align: center;
+  max-width: 1024px;
+  margin: 0 auto;
+  font-family: "OpenSans", Arial;
+}
+.clients h1 {
+  font-size: 50px;
+  font-family: "Montserrat";
+  padding-bottom: 60px;
+}
+.clients .block-center-inner {
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.clients .container-for-points {
+  cursor: pointer;
+  margin-bottom: 50px;
+}
+.clients .point {
+  transition: 0.2s linear;
+  display: inline-block;
+  border-radius: 50%;
+  height: 11px;
+  width: 11px;
+  background: #2f3b52;
+  margin-left: 10px;
+}
+.clients .point:hover {
+  background: #dcff88;
+}
+
+.reviews {
+  max-width: 1400px;
+  margin: 0 auto;
+  font-family: "OpenSans", Arial;
+  background: #2f3b52;
+}
+.reviews h1 {
+  padding: 70px 0px 30px 70px;
+}
+.reviews .container-for-quote {
+  margin: 0 70px;
+  background: #c9e97c;
+}
+.reviews .img-wrapper-1 img {
+  margin-left: 25px;
+  padding-top: 20px;
+}
+.reviews .quote {
+  padding: 0 70px;
+  font-style: italic;
+  line-height: 30px;
+  font-size: 18px;
+}
+.reviews .img-wrapper-2 {
+  text-align: right;
+}
+.reviews .img-wrapper-2 img {
+  margin-right: 25px;
+  padding-bottom: 20px;
+}
+.reviews .container-for-pseudo-element {
+  padding: 0 70px;
+  position: relative;
+}
+.reviews .container-for-pseudo-element::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 25px solid #c9e97c;
+  left: 110px;
+}
+.reviews .member-arrows {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+  align-items: center;
+  padding: 50px 70px;
+}
+.reviews .member-arrows .member {
+  display: flex;
+  align-items: center;
+}
+.reviews .member-arrows .member .about {
+  margin-left: 30px;
+  color: #ffffff;
+}
+.reviews .member-arrows .member .about .name {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.reviews .member-arrows .member .about .post {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.reviews .member-arrows .arrows {
+  position: relative;
+  width: 80px;
+  height: 37px;
+}
+.reviews .member-arrows .arrows::before {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 37px;
+  background: url(../img/shape_left.png);
+  left: 0px;
+  cursor: pointer;
+}
+.reviews .member-arrows .arrows::after {
+  position: absolute;
+  content: "";
+  width: 17px;
+  height: 37px;
+  background: url(../img/shape_right.png);
+  left: 60px;
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) and (min-width: 768px) {
+  .big-picture-main .container-common .container-2 {
+    padding: 8% 0 5% 0;
+  }
+}
+@media (max-width: 767px) {
+  .team-area {
+    padding-bottom: 20px;
+  }
+  .team-area .container-for-team-members {
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  .team-area .container-for-team-members .block {
+    flex-basis: 50%;
+    padding: 0 20px 20px 20px;
+  }
+  .team-area .container-for-team-members .block .about-member {
+    text-align: left;
+    padding: 0 5px 20px 20px;
+  }
+  .team-area .container-for-team-members .block .container-for-photo {
+    margin-bottom: 30px;
+  }
+  .team-area .container-for-team-members .block .container-for-photo img {
+    outline: 2px solid rgba(247, 243, 101, 0.72);
+    box-shadow: 3px 1px 4px 3px rgba(46, 208, 234, 0.49);
+    transform: scale(1.1);
+  }
+
+  .blog-posts {
+    padding-bottom: 0;
+  }
+  .blog-posts h1 {
+    padding: 40px 0 30px 0;
+  }
+  .blog-posts .accordion {
+    padding: 0 20px;
+    flex-wrap: wrap;
+  }
+  .blog-posts .accordion .container {
+    flex-basis: 50%;
+    padding: 0 20px 20px 20px;
+  }
+  .blog-posts .accordion .container .text-bottom {
+    text-align: left;
+    padding: 0 5px 20px 20px;
+  }
+  .blog-posts .accordion .container .container-img {
+    margin-bottom: 15px;
+  }
+  .blog-posts .accordion .container .container-img img {
+    outline: 2px solid rgba(247, 243, 101, 0.72);
+    box-shadow: 3px 1px 4px 3px rgba(46, 208, 234, 0.49);
+    transform: scale(1.1);
+  }
+
+  .timetable .block-left {
+    display: none;
+  }
+
+  .timetable .timetable-inner .block-right {
+    margin-left: 0;
+  }
+
+  .clients .block-center-inner {
+    padding: 0 15px;
+    padding-bottom: 30px;
+  }
+  .clients .block-center-inner img {
+    width: 100%;
+    height: auto;
+    min-width: 30px;
+  }
+  .clients .block-center-inner img:not(:first-child) {
+    margin-left: 4%;
+  }
+
+  .big-picture-main .container-common .container-2 {
+    padding: 8% 0 6% 0;
+  }
+}
+@media (max-width: 600px) {
+  .header-main .header-center .header-inner {
+    padding: 5px 5px;
+    align-items: center;
+  }
+  .header-main .header-center .header-inner .about-us {
+    flex-direction: column;
+    align-items: flex-start;
+    flex-basis: 30%;
+  }
+  .header-main .header-center .header-inner .about-us > div {
+    display: none;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+  .header-main .header-center .header-inner .about-us .kt {
+    position: relative;
+  }
+  .header-main .header-center .header-inner .about-us .kt .fa-chevron-down {
+    display: block;
+    font-family: "FontAwesome";
+    position: absolute;
+    background: #2f3b52;
+    padding: 3px;
+    left: 80px;
+    bottom: 0;
+    font-size: 20px;
+    text-align: center;
+    color: #dcff88;
+    border-radius: 3px;
+  }
+  .header-main .header-center .header-inner .about-us .external-kt .kt {
+    padding: 20px 20px 20px 20px;
+  }
+  .header-main .header-center .header-inner .phone-main {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .header-main .header-center .header-inner .phone-main .phone-main-number {
+    margin-left: 5px;
+    margin-top: 14px;
+  }
+
+  .big-picture-main .container-common .container-1 {
+    display: none;
+  }
+
+  .contacts {
+    position: relative;
+  }
+  .contacts .fa-chevron-up {
+    display: block;
+    font-family: "FontAwesome";
+    position: absolute;
+    background: #2f3b52;
+    padding: 3px;
+    left: 95px;
+    bottom: -3px;
+    font-size: 20px;
+    text-align: center;
+    color: #dcff88;
+    border-radius: 3px;
+  }
+
+  .container-for-big-picture img {
+    display: none;
+  }
+
+  .big-picture-main .container-common .container-2 {
+    padding: 10px 0 10px 0;
+    background: rgba(168, 197, 236, 0.43);
+  }
+  .big-picture-main .container-common .container-2 h1, .big-picture-main .container-common .container-2 .text {
+    padding-bottom: 15px;
+    color: #121f37;
+  }
+
+  h1, .team-area h1, .blog-posts h1, .clients h1, .timetable .timetable-inner .container-for-text h1 {
+    font-size: 40px;
+  }
+
+  .team-area h1 {
+    padding: 20px 0 20px 0;
+  }
+
+  .reviews-center h1 {
+    padding: 20px 0px 20px 20px;
+  }
+  .reviews-center .container-for-quote {
+    margin: 0 20px;
+  }
+  .reviews-center .container-for-quote .img-wrapper-1 img {
+    margin-left: 5px;
+    padding-top: 7px;
+  }
+  .reviews-center .container-for-quote .img-wrapper-2 img {
+    margin-right: 5px;
+    padding-bottom: 7px;
+  }
+  .reviews-center .container-for-quote .quote {
+    padding: 0 35px;
+  }
+
+  .team-area .container-for-team-members .block .container-for-photo img,
+  .blog-posts .accordion .container .container-img img {
+    transform: scale(1);
+  }
+
+  .reviews .member-arrows {
+    padding: 50px 50px;
+  }
+
+  .reviews .container-for-pseudo-element::before {
+    left: 90px;
+  }
+
+  .reviews .member-arrows .member .about {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 480px) {
+  .team-area .container-for-team-members .block, .blog-posts .accordion .container {
+    flex-basis: 100%;
+    padding: 0 0px 40px 0px;
+  }
+
+  .team-area .container-for-team-members .block .container-for-photo {
+    margin-bottom: 20px;
+  }
+  .team-area .container-for-team-members .block .container-for-photo img {
+    transform: scale(1);
+  }
+
+  .timetable {
+    padding: 30px 0;
+  }
+  .timetable .timetable-inner .container-for-text h1 {
+    font-size: 30px;
+  }
+
+  .reviews .member-arrows {
+    padding: 40px 10px;
+  }
+  .reviews .member-arrows .member .about {
+    margin-left: 10px;
+  }
+  .reviews .member-arrows .arrows {
+    width: 110px;
+  }
+
+  .reviews .container-for-pseudo-element::before {
+    left: 50px;
+  }
+}

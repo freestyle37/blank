@@ -1,0 +1,31 @@
+.header-main 
+  .header-center
+    max-width: #{$mw1}
+    margin: 0 auto
+    background: rgba(186, 212, 255, 0.27)
+    .header-inner
+      display: flex
+      justify-content: space-between
+      padding: 20px 10px
+      .about-us 
+        flex-basis: 50%
+        @extend %align1
+        text-transform: uppercase
+        &>div
+          margin-left: 10px
+          transition: 0.2s linear
+          &:hover
+            color: #{$color3}
+            cursor: pointer
+        .external-kt
+          background: #{$dark-blue-1}
+          border-radius: 4px
+          .kt
+            padding: 20px
+            color: #{$lime-green-1}
+      .phone-main
+        @extend %align1
+        .icon-phone-main::before
+          content: "\f10b"
+        .phone-main-number
+          margin-left: 20px

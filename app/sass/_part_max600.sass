@@ -1,0 +1,85 @@
+@media (max-width: 600px)
+  .header-main .header-center
+    .header-inner
+      padding: 5px 5px
+      align-items: center
+      .about-us
+        flex-direction: column
+        align-items: flex-start
+        flex-basis: 30%
+        & > div
+          display: none
+          margin-left: 0
+          margin-top: 10px
+        .kt
+          position: relative
+          .fa-chevron-down
+            display: block
+            font-family: "FontAwesome"
+            position: absolute
+            background: #{$dark-blue-1}
+            padding: 3px
+            left: 80px
+            bottom: 0
+            font-size: 20px
+            text-align: center
+            color: #{$lime-green-1}
+            border-radius: 3px
+        .external-kt .kt
+          padding: 20px 20px 20px 20px
+      .phone-main
+        flex-direction: row
+        align-items: flex-start
+        .phone-main-number
+          margin-left: 5px
+          margin-top: 14px
+  .big-picture-main .container-common .container-1
+    display: none
+  .contacts
+    position: relative
+    .fa-chevron-up
+      display: block
+      font-family: "FontAwesome"
+      position: absolute
+      background: #{$dark-blue-1}
+      padding: 3px
+      left: 95px
+      bottom: -3px
+      font-size: 20px
+      text-align: center
+      color: #{$lime-green-1}
+      border-radius: 3px
+  .container-for-big-picture img
+    display: none
+  .big-picture-main .container-common .container-2
+    padding: 10px 0 10px 0
+    background: rgba(168, 197, 236, 0.43)
+    h1, .text
+      padding-bottom: 15px
+      color: #{$dark-blue-2}
+  h1, .team-area h1, .blog-posts h1, .clients h1, .timetable .timetable-inner .container-for-text h1
+    font-size: 40px
+  .team-area h1
+    padding: 20px 0 20px 0
+  .reviews-center
+    h1
+      padding: 20px 0px 20px 20px
+    .container-for-quote
+      margin: 0 20px
+      .img-wrapper-1 img
+        margin-left: 5px
+        padding-top: 7px
+      .img-wrapper-2 img
+        margin-right: 5px
+        padding-bottom: 7px
+      .quote
+        padding: 0 35px
+  .team-area .container-for-team-members .block .container-for-photo img,
+  .blog-posts .accordion .container .container-img img
+    transform: scale(1)
+  .reviews .member-arrows
+    padding: 50px 50px
+  .reviews .container-for-pseudo-element::before
+    left: 90px
+  .reviews .member-arrows .member .about
+    margin-left: 15px

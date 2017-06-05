@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans')
+
+$mw0: 1400px /*max-width-0*/
+$mw1: 1024px /*max-width-1*/
+$dark-blue-1: rgb(47, 59, 82)
+$dark-blue-2: #121f37
+$color3: #717a8c
+$color4: #ffffff
+$lime-green-1: rgb(220, 255, 136)
+$lime-green-2: rgb(201, 233, 124)
+$d1: 47px /* diameter of icon small*/
+$r1: $d1/2
+.page
+  max-width: #{$mw0}
+  background: rgba(47, 126, 255, 0.27)
+  margin: 0 auto
+%align1
+  display: flex
+  justify-content: space-between
+  align-items: center
+%billet1-text
+  font-family: "Montserrat"
+  font-size: 18px
+  font-weight: 700
+  margin-bottom: 10px
+  text-transform: uppercase
+%billet2-text
+  font-size: 14px
+  font-weight: 400
+  line-height: 20px
+.icon.small
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  background: #{$dark-blue-1}
+  width: #{$d1}
+  height: #{$d1}
+  border-radius: #{$r1}
+  &::before
+    font-family: "FontAwesome"
+    font-size: 43px
+    text-align: center
+    color: #{$lime-green-1}
+
+*
+  box-sizing: border-box
+
+body 
+  padding: 0
+  margin: 0
+  font-family: "Montserrat"
+  min-width: 320px
+a
+  text-decoration: none
+h1
+  margin: 0
+  padding: 0
+  font-size: 50px
+  font-family: "Montserrat"
+.fa-chevron-down, .fa-chevron-up
+  display: none
+@import "part_header"
+@import "part_big_picture"
+@import "part_team-area"
+@import "part_timetable"
+@import "part_blog-posts"
+@import "part_clients"
+@import "part_reviews"
+@import "part_min768-max1000"
+@import "part_max767.sass"
+@import "part_max600.sass"
+@import "part_max480.sass"
