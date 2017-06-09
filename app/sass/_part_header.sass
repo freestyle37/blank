@@ -1,8 +1,9 @@
+ul
+  transition: 1s linear
+  display: none
 .header-main 
   .header-center
-    max-width: #{$mw1}
-    margin: 0 auto
-    background: rgba(186, 212, 255, 0.27)
+    background: inherit
     .header-inner
       display: flex
       justify-content: space-between
@@ -12,7 +13,7 @@
         @extend %align1
         text-transform: uppercase
         &>div
-          margin-left: 10px
+          margin-left: 20px
           transition: 0.2s linear
           &:hover
             color: #{$color3}

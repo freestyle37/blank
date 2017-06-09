@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
 .page {
-  max-width: 1400px;
+  max-width: 1920px;
   background: rgba(47, 126, 255, 0.27);
   margin: 0 auto;
 }
@@ -64,14 +64,31 @@ h1 {
   font-family: "Montserrat";
 }
 
+li {
+  list-style: none;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
 .fa-chevron-down, .fa-chevron-up {
   display: none;
 }
 
-.header-main .header-center {
-  max-width: 1024px;
+.header-center, .team-area, .blog-posts, .clients {
+  max-width: 1476.92308px;
   margin: 0 auto;
-  background: rgba(186, 212, 255, 0.27);
+}
+
+ul {
+  transition: 1s linear;
+  display: none;
+}
+
+.header-main .header-center {
+  background: inherit;
 }
 .header-main .header-center .header-inner {
   display: flex;
@@ -83,7 +100,7 @@ h1 {
   text-transform: uppercase;
 }
 .header-main .header-center .header-inner .about-us > div {
-  margin-left: 10px;
+  margin-left: 20px;
   transition: 0.2s linear;
 }
 .header-main .header-center .header-inner .about-us > div:hover {
@@ -128,7 +145,7 @@ h1 {
   left: -60px;
 }
 .big-picture-main .container-common .container-1 .color-option {
-  color: red;
+  color: #ff6200;
   background: #8835ec;
   width: 170px;
   position: absolute;
@@ -137,6 +154,11 @@ h1 {
   box-shadow: 0.9px 0.3px 1px #62e48a;
   border-radius: 5px;
   cursor: pointer;
+  transition: 1s linear;
+}
+.big-picture-main .container-common .container-1 .color-option:hover {
+  background: #f9890c;
+  color: #223e2b;
 }
 .big-picture-main .container-common .container-2 {
   font-family: "OpenSans", Arial;
@@ -167,8 +189,6 @@ h1 {
 }
 
 .team-area {
-  margin: 0 auto;
-  max-width: 1024px;
   text-align: center;
   font-family: "OpenSans", Arial;
   color: #121f37;
@@ -222,7 +242,7 @@ h1 {
 
 .timetable {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 1920px;
   text-align: left;
   font-family: "OpenSans", Arial;
   color: #ffffff;
@@ -264,8 +284,6 @@ h1 {
 
 .blog-posts {
   text-align: center;
-  max-width: 1024px;
-  margin: 0 auto;
   font-family: "OpenSans", Arial;
   padding-bottom: 80px;
 }
@@ -292,8 +310,6 @@ h1 {
 
 .clients {
   text-align: center;
-  max-width: 1024px;
-  margin: 0 auto;
   font-family: "OpenSans", Arial;
 }
 .clients h1 {
@@ -326,7 +342,7 @@ h1 {
 }
 
 .reviews {
-  max-width: 1400px;
+  max-width: 1920px;
   margin: 0 auto;
   font-family: "OpenSans", Arial;
   background: #2f3b52;
@@ -500,7 +516,7 @@ h1 {
     padding: 8% 0 6% 0;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 601px) {
   .header-main .header-center .header-inner {
     padding: 5px 5px;
     align-items: center;
@@ -652,5 +668,154 @@ h1 {
 
   .reviews .container-for-pseudo-element::before {
     left: 50px;
+  }
+}
+@media (min-width: 601px) {
+  .container-for-colors {
+    display: none;
+  }
+
+  .external-portfolio,
+  .external-blog,
+  .external-contacts {
+    height: 100%;
+    line-height: 57px;
+  }
+
+  .about-us > div:hover div > ul {
+    display: block;
+    z-index: 5;
+  }
+
+  .external-portfolio .portfolio,
+  .external-blog .blog,
+  .external-contacts .contacts {
+    position: relative;
+  }
+
+  .unordered-list-1,
+  .unordered-list-2,
+  .unordered-list-3 {
+    position: absolute;
+    color: white;
+    margin-top: 0px;
+    width: 150px;
+    left: -20px;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .unordered-list-1 li:not(:last-child),
+  .unordered-list-2 li:not(:last-child),
+  .unordered-list-3 li:not(:last-child) {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    transition: 0.2s linear;
+    border-bottom: 1px solid #c1c1c1;
+  }
+
+  .unordered-list-1 li:not(:first-child),
+  .unordered-list-2 li:not(:first-child),
+  .unordered-list-3 li:not(:first-child) {
+    background: #262d4c;
+  }
+
+  .unordered-list-1 li:not(:first-child):hover,
+  .unordered-list-2 li:not(:first-child):hover,
+  .unordered-list-3 li:not(:first-child):hover {
+    color: #dcff88;
+    background: #71819c;
+  }
+
+  .unordered-list-1 li:first-child,
+  .unordered-list-2 li:first-child,
+  .unordered-list-3 li:first-child {
+    background: transparent;
+    height: 23px;
+  }
+
+  .unordered-list-1 li,
+  .unordered-list-2 li,
+  .unordered-list-3 li {
+    padding-left: 20px;
+  }
+
+  .unordered-list-1 li:last-child,
+  .unordered-list-2 li:last-child,
+  .unordered-list-3 li:last-child {
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  .container-for-colors {
+    background: black;
+    color: white;
+    left: 120px;
+    position: absolute;
+    z-index: 4;
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px #454845;
+  }
+  .container-for-colors .colors-external .colors {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .container-for-colors .colors-external .colors .color {
+    cursor: pointer;
+    margin-top: 10px;
+    flex-basis: 50%;
+  }
+  .container-for-colors .colors-external .colors .color > div {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: green;
+  }
+  .container-for-colors .colors-external .colors .color > span {
+    margin-left: 10px;
+  }
+
+  .container-for-colors .colors-external .colors .pink > div {
+    background: pink;
+  }
+
+  .container-for-colors .colors-external .colors .green > div {
+    background: green;
+  }
+
+  .container-for-colors .colors-external .colors .blue > div {
+    background: blue;
+  }
+
+  .container-for-colors .colors-external .colors .light-green > div {
+    background: lightgreen;
+  }
+
+  .container-for-colors .colors-external .colors .dark-blue > div {
+    background: #121f37;
+  }
+
+  .container-for-colors .colors-external .colors .yellow > div {
+    background: yellow;
+  }
+
+  .container-for-colors .colors-external .colors .violet > div {
+    background: violet;
+  }
+
+  .container-for-colors .colors-external .colors .light-orange > div {
+    background: #fdca6c;
+  }
+
+  .container-for-colors .colors-external .colors .cyan > div {
+    background: cyan;
+  }
+
+  .container-for-colors .colors-external .colors .orange > div {
+    background: orange;
   }
 }
